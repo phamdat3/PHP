@@ -19,7 +19,7 @@
 [12. Biểu thức điều kiện if else if else](#12)          
 [13. Biểu thức gán](#13)        
 [14. Biểu thức toán học](#14)                                      
-[15. Toán tử tăng và gảm(increment and decrement operator)](#15)              
+[15. Toán tử tăng và gảm(increment and decrement operator)](#15)       
 [16. Biểu thức so sánh](#16)             
 [17. Biểu thức quan hệ(logic)](#17)                     
 [18. Hàm die và exit](#18)                
@@ -36,6 +36,19 @@
 # Nội dung.
 <a name="1"></a>
 ##1. Giới thiệu về PHP
+- **PHP** (Hypertext Preprocessor) là một ngôn ngữ lập trình kịch bản hay một loại mã lệnh chủ yếu được dùng để phát triển các ứng dụng viết cho máy chủ(server), mã nguồn mở, dùng cho mục đích tổng quát. Nó rất thích hợp với web và có thể dễ dàng nhúng vào trang HTML. Do được tối ưu hóa cho các ứng dụng web, tốc độ nhanh, nhỏ gọn, cú pháp giống C và Java, dễ học và thời gian xây dựng sản phẩm tương đối ngắn hơn so với các ngôn ngữ khác nên PHP.
+- Để tạo một trang Web động thì ta cần sử dụng ngôn ngữ PHP và hệ quản trị cơ sở dữ liệu (ví dụ như SQL) 
+- Để có thể thử cá đoạn code về web của chúng ta môt cách giễ dành thì chúng ta không thể nào mà đẩy chũng lên website để thử vì nó khá tốn công và tốn thời gian. Vì thế chũng ta nên tạo 1 web server ảo trên chính máy của chũng ta để thử và khi đã ổn định rồi thì chũng ta mới đẩy lên.
+- Có hai loại web server ảo phổ biến là **wampp** và **xampp** chũng ta hãy tải 1 trong hai về để cài đặt và sử dụng.
+- Sau khi cài đặt song chũng ta hay truy cập vào rang web **localhost**
+<img src="http://imageshack.com/a/img921/138/FNV29t.png">
+- Tạo một trang PHP cow bản:
+ + Tạo một file để viết PHP với đường dẫn là `Local Disk(C:)\wamp\www` và có đuôi là `.php`
+ + Viết một đoạn với thẻ đóng mở:
+ <img src="http://imageshack.com/a/img922/6791/HBVXgb.png">
+ + Sau đó trúng ta ra trang web **localhost** chũng ta gõ thêm vào là *localhost\ten_file.php*
+ <img src="http://imageshack.com/a/img923/5499/N0kPkq.png">
+ <img src="http://imageshack.com/a/img922/855/6XwSeW.png">
 
 <a name="2"></a>
 ##2. Nhúng PHP vào trang HTML
