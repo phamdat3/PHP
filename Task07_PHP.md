@@ -88,8 +88,10 @@
  + Vào thư mục **bin/apache/apache2.4.23/conf** 
  + Vào thư mục **htppd.conf** để sửa một số thông tin có liên quan về cổng.
  + Đi đến dòng có hiển thị: 
- <img src="http://imageshack.com/a/img923/5220/8leeZF.png">
+
+  <img src="http://imageshack.com/a/img923/5220/8leeZF.png">
  + Thay đổi:
+
  <img src="http://imageshack.com/a/img923/8556/ltbdTj.png">
  + Lưu lại và khỏi động lại.
  + Chúng ta thử đăng nhập vào localhost. Giờ chũng ta không đăng nhập vào đường dẫn là **localhost** mà chũng ta phải đăng nhập vào **loaclhost:30** (chúng ta đã sử thành 30).
@@ -119,18 +121,28 @@
 <img src="http://imageshack.com/a/img923/4956/xTiL80.png">
 - Có thể thêm css vào nữa:
 <img src="http://imageshack.com/a/img921/264/jymbsA.png">
+- Dấu `" " ` và dấu `' '` trong khai báo biến và trong hàm echo là tương đương nhau, chú ý là dung dấu mở nào thì phải dùng dấu đóng tương ứng.
+- Để in ra dấu `'` hoăc dấu `"` nằm trong dấu tương ứng của nó thì chúng ta phải sử viết là `\'` và `\"`.
+<img src ="http://imageshack.com/a/img923/7436/zILSld.png">
 
 <a name="9"></a>
 ##9. Biểu thức nối chuỗi(concatenation)
+- Để 2 chuỗi khi xuất ra màn hình cách nhau bởi một dấu cách thì chúng ta dùng `$bien1.' '.$bien2`. Dấu `.` có thể thay bằng dấu `,`.
+<img src="http://imageshack.com/a/img924/6696/exIWoT.png">
+<img src="http://imageshack.com/a/img922/3632/BEaiwW.png">
+- Nối thêm một đoạn vào nữa thì dùng `$bien .= "noi dung them";`
 
 <a name="10"></a>
 ##10. Nhúng PHP vào trang HTML
+- Khai báo trên cùng chủ yếu nên khai bảo biến, mảng,kết nối... muốn sử dụng trong chương trình.
+- Ở giữa chủ yếu để đưa ra kết quả và html format.
+<img src="http://imageshack.com/a/img922/8394/ZXJAdt.png">
+- Ở cuối chủ yếu dùng để hủy giá trị biến, mảng, kết nôi
 
 <a name="11"></a>
 ##11. Biểu thức điều kiện if else
-
-<a name="12"></a>
-##12. Biểu thức điều kiện if else if else
+- Nếu trong câu điều kiện chỉ có 1 lệnh thì khong cần dấu ngoặc `{}` nếu từ 2 lệnh trở lên thì cần phải có dấu ngoặc.
+- Với câu điều kiện if else lồng nhau thì phải chú ý đền các dấu ngoặc.
 
 <a name="13"></a>
 ##13. Biểu thức gán
