@@ -46,30 +46,79 @@
  + Tạo một file để viết PHP với đường dẫn là `Local Disk(C:)\wamp\www` và có đuôi là `.php`
  + Viết một đoạn với thẻ đóng mở:
  <img src="http://imageshack.com/a/img922/6791/HBVXgb.png">
- + Sau đó trúng ta ra trang web **localhost** chũng ta gõ thêm vào là *localhost\ten_file.php*
+ + Sau đó trúng ta ra trang web **localhost** chũng ta gõ thêm vào là *localhost/ten_file.php*
  <img src="http://imageshack.com/a/img923/5499/N0kPkq.png">
  <img src="http://imageshack.com/a/img922/855/6XwSeW.png">
 
 <a name="2"></a>
 ##2. Nhúng PHP vào trang HTML
+- File được lưu phải có đuôi là `.php` thì mới có thể nhúng PHP vào trang HTML, nếu không để đuôi đó thì nó xẽ bỏ qua luôn không được đọc đoạn PHP đó.
+- **echo**: là hàm để in ra một chuỗi dạng text, thẻ HTML. Nội dung cần hiển thị có thể nằm trong dấu nháy đợn hoặc nháy kép.
+- **print**: cũng tương tự như hàm **echo**, có thể in ra thêm các định dạng.
 
 <a name="3"></a>
 ##3. Biến và chú thích
+- Cài Web server. Sau đó bật lên và lên trình duyệt truy cập vào trang `localhost`.
+- Tạo một thư mục trong thư mục `www`.
+- Commen: Không có hiệu lục gì khi viết code chỉ để giải thích.
+   + Dùng dấu `\\` thì dòng dduocj đánh dấu đó sẽ là comments
+   + Dùng dấu `\* nội dung *\` thì phàn nội dung ở trong sẽ là comments
+   + Dùng dấu `#` thì dòng đó sẽ là commen.
+- Kết thúc mỗi câu lệnh là dấu `;`
+- Câu lệnh **echo** xuất ra màn hình.
+- Dấu **$** là phần tử bắt buộc phải có khi khai báo biến.
+- Biến như là một cái hộp để đựng những giá trị cần thiết. Khi khai báo biến thì nó được cấp cho một vùng nhớ và nó có thể lưu trữ hay gán giá trị vào và có ý nghĩa trong xuất chương trình. Biến này có thể thay đổi giá trị trong quá trình sử dụng và nó có tác dụng khi bắt đầu đến dòng thay đổi biến.
+- Chú ý: Không cần pahir khai báo kiểu dữ liệu của biến khi khai báo, mà gán thẳng giá trị cho biến đó và nó xẽ ngầm định dạng cho kiểu biến. Không giống như các ngôn ngữ khác.
+- Cú pháp khai báo biến  mảng 1 chiều: 
+```
+ $myArr = array("5","3","2");
+ echo $myArr[2]; // truy xuất phần tử thứ 3, có giá trị hiển thị là 2
+```
+- Cú pháp khai báo mảng 2 chiều:
+```
+ $myTwoDimension = array(array(a,b,c),array(3,4,6));
+ echo $myTwoDimension[0][1]; // truy xuất đến biến có giá trị hienr thị là **b**.
+```
 
 <a name="4"></a>
 ##4. Cấu hình Web Server
+- Nếu bạn có cài một số phầm mềm khác phần mềm bạn đang cài mà chưa gỡ bỏ hoàn toàn thì nó xẽ bị lỗi xung đọt cổng với nhau khi bạn vào **localhost**.
+**Chú ý** Nếu bạn bị sung đột cổng mới thay đổi còn không thì chũng ta không nên thay đổi.
+- Cách giải quyết:
+ + Vào thư mục **bin/apache/apache2.4.23/conf** 
+ + Vào thư mục **htppd.conf** để sửa một số thông tin có liên quan về cổng.
+ + Đi đến dòng có hiển thị: 
+ <img src="http://imageshack.com/a/img923/5220/8leeZF.png">
+ + Thay đổi:
+ <img src="http://imageshack.com/a/img923/8556/ltbdTj.png">
+ + Lưu lại và khỏi động lại.
+ + Chúng ta thử đăng nhập vào localhost. Giờ chũng ta không đăng nhập vào đường dẫn là **localhost** mà chũng ta phải đăng nhập vào **loaclhost:30** (chúng ta đã sử thành 30).
+- Thay đổi thư mục lưu trữ các code mình viết.
 
 <a name="5"></a>
 ##5. Hàm phpinfo()
 
 <a name="6"></a>
 ##6. Định dạng code (indentation)
+- Việc PHP tự tìm ra lỗi là hơi khó nên khi ta viết mã code thì phải phân bố cục từng phần thụt ra và thụt vào hợp lý cho dễ dàng nhìn từng phần một. Để khi ta tìm lỗi hay sửa lỗi thì dễ dàng hơn.
+- Chú ta có thể dùng thêm các comments để dễ hiểu từng phần hơn
 
 <a name="7"></a>
 ##7. Sử dụng echo, print
+- **echo**: là hàm xuất một chuỗi ra màn hình web.
+- **print**: tương tụ hàm echo.
+- Nhưng hàm echo dduocj sử dụng nhiều hơn.
 
 <a name="8"></a>
 ##8. echo_print mã html
+- Có thể Chèn PHP vào HTML để dùng hàm echo rồi in ra màn hình.
+<img src="http://imageshack.com/a/img921/8999/LxZV2U.png">
+- Vì bây giờ đoạn văn bản in ra là dùng theo PHP nên ta có thể chèn thêm biến bất kỳ vào trong đoạn vă bản được.
+<img src="http://imageshack.com/a/img921/3218/EsOYot.png">
+- Dùng if else để in ra tùy chọn:
+<img src="http://imageshack.com/a/img923/4956/xTiL80.png">
+- Có thể thêm css vào nữa:
+<img src="http://imageshack.com/a/img921/264/jymbsA.png">
 
 <a name="9"></a>
 ##9. Biểu thức nối chuỗi(concatenation)
