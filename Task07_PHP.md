@@ -165,8 +165,11 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 ##15. Toán tử tăng và gảm(increment and decrement operator)
 - Khi chúng ta dùng `$a++ hoặc $a--` nghĩa là chúng lấy giá trị của **a** trước để in ra hoặc dùng cho các phép toán trước rồi nó mới tăng hoạc giảm giá trị cảu nó sau.
 - Khi chúng ta dùng `++$a hoặc --$a` là chúng ta tăng hoạc giảm chũng trước rồi in ra hoặc dùng để tính toán.
-- * Chúng ta phải đặc biệt chú ý đến 2 cơ chế hoạt động cảu 2 trường hợp này*
+
+* Chúng ta phải đặc biệt chú ý đến 2 cơ chế hoạt động cảu 2 trường hợp này*
+
 <img src="http://imageshack.com/a/img924/4889/TZ0Esx.png">
+
 <img src="http://imageshack.com/a/img922/7024/sAmZ2Z.png">
 
 <a name="16"></a>
