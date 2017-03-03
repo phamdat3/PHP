@@ -146,9 +146,18 @@
 
 <a name="13"></a>
 ##13. Biểu thức gán
+- Chungs ta có thể gán giá trị cho biến theo nhiều cách.
+  + Gán thẳng cho biến luôn:
+  <img src="http://imageshack.com/a/img924/741/kFkCYE.png">
+  + Gán thông qua biến khác:
+  <img src="http://imageshack.com/a/img922/4641/uvSlfB.png">
+  + Chúng ta còn có thể gán được cả phép tóan cho biến:
+  <img src="http://imageshack.com/a/img924/2075/SNLmh4.png">
 
 <a name="14"></a>
 ##14. Biểu thức toán học
+- Chúng ta có thể thục hiện các phép toán như trên các ngôn ngữ khác để có thể gán giá trị cho biến.
+<img src="http://imageshack.com/a/img924/4691/GcoEvd.png">
 
 <a name="15"></a>
 ##15. Toán tử tăng và gảm(increment and decrement operator)
