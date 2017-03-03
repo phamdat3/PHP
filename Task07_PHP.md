@@ -166,7 +166,7 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 - Khi chúng ta dùng `$a++ hoặc $a--` nghĩa là chúng lấy giá trị của **a** trước để in ra hoặc dùng cho các phép toán trước rồi nó mới tăng hoạc giảm giá trị cảu nó sau.
 - Khi chúng ta dùng `++$a hoặc --$a` là chúng ta tăng hoạc giảm chũng trước rồi in ra hoặc dùng để tính toán.
 
-* Chúng ta phải đặc biệt chú ý đến 2 cơ chế hoạt động cảu 2 trường hợp này*
+*Chúng ta phải đặc biệt chú ý đến 2 cơ chế hoạt động cảu 2 trường hợp này*
 
 <img src="http://imageshack.com/a/img924/4889/TZ0Esx.png">
 
@@ -174,21 +174,51 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 
 <a name="16"></a>
 ##16. Biểu thức so sánh
+- So sánh giá trị của hai biến.
+<img src="http://imageshack.com/a/img922/1231/OQv1k5.p">
+- So sánh  kiểu dữ liệu của ha biến `===`.
+<img src="http://imageshack.com/a/img923/4831/5ZeoTT.png">
+<img src="http://imageshack.com/a/img923/6172/i8mxtG.png">
 
 <a name="17"></a>
 ##17. Biểu thức quan hệ(logic)
+- Dạng 1: biểu thức quan hệ **end** ký hiệu là `&&`.
+<img src="http://imageshack.com/a/img921/2171/7QKHaN.png">
+- Dạng 2: Biểu thức quan hệ **or** ký hiệu là `||`.
+<img src="http://imageshack.com/a/img922/7167/T2018P.png">
+
+<img src="http://imageshack.com/a/img922/6418/nRGMdM.png">
+- Dạng 3: Biểu thức quan hệ **xor**.
+<img src="http://imageshack.com/a/img921/6038/27bJIq.png">
 
 <a name="18"></a>
 ##18. Hàm die và exit
+- Dùng để thoát khỏi chương trình và thông báo cho người dùng biết có một lỗi nào đó. Và đưa ra lỗi cho người dùng biết.
+- Ban đầu.
+<img src="http://imageshack.com/a/img924/4586/M5ZHUO.png">
+ + Khi cho thêm hàm `die`. Thì các dòng lệnh sau thẻ `die` sẽ không được đọc đến và k được biên dịch ra mà chỉ bien dịch và dữ lại các câu lệnh trước thẻ `die`.
+ <src img="http://imageshack.com/a/img923/944/aRhUYE.png">
+ + Khi cho thêm thẻ `exit`. Thì các dòng lệnh sau thẻ `exit` sẽ không được đọc đến và chỉ đọc đk những thẻ trước nó và không được lưu dữ lại àm ó sẽ thoát ra khỏi luôn.
+ <img src="http://imageshack.com/a/img923/5084/Lcpj5r.png">
 
 <a name="19"></a>
-##19. Vòng lặp While
+##19. Vòng lặp While và do while.
+- Vòng lặp do while: Thực hiện câu lệnh trước rồi kiểm tra điều kiện, nên số lần lặp ít nhất là 1.
+<img src="http://imageshack.com/a/img923/7771/0j2mFZ.png">
+- Vòng lặp While: Thực hiện kiểm tra điều kiện trước sau đó mói thực hiện lệnh, nên số lần lặp ít nhất là 0.
+<img src="http://imageshack.com/a/img923/7106/W3DusA.png">
 
 <a name="20"></a>
 ##20. Vòng lặp for
+- Vòng lặp mà chúng ta có thể kiểm xoát được biến khỏi tạo dan đầu và số vòng lăp và lặp như thế nào ngay từ đâu.
+<img src=""> 
 
 <a name="21"></a>
 ##21. Break và continue
+- **Break**: Dừng công việc (vd như dừng vòng lặp) và thoát khỏi và không đọc các lênh phái sau.
+<img src="">
+- **Continue**: Tiếp tục các câu lệnh phía sau.
+<img src=""
 
 <a name="22"></a>
 ##22. Cấu trúc rẽ nhánh Switch
