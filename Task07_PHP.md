@@ -156,11 +156,14 @@
 
 <a name="14"></a>
 ##14. Biểu thức toán học
-- Chúng ta có thể thục hiện các phép toán như trên các ngôn ngữ khác để có thể gán giá trị cho biến.
+- Chúng ta có thể thục hiện các phép toán như trên các ngôn ngữ khác để có thể tính toán như bình thường. 
+chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy số dư.
+
 <img src="http://imageshack.com/a/img924/4691/GcoEvd.png">
 
 <a name="15"></a>
 ##15. Toán tử tăng và gảm(increment and decrement operator)
+- 
 
 <a name="16"></a>
 ##16. Biểu thức so sánh
