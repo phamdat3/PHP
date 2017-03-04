@@ -180,7 +180,7 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 ##16. Biểu thức so sánh
 - So sánh giá trị của hai biến.
 
-<img src="http://imageshack.com/a/img922/1231/OQv1k5.p">
+<img src="http://imageshack.com/a/img922/1231/OQv1k5.png">
 - So sánh  kiểu dữ liệu của ha biến `===`.
 <img src="http://imageshack.com/a/img923/4831/5ZeoTT.png">
 <img src="http://imageshack.com/a/img923/6172/i8mxtG.png">
@@ -283,3 +283,5 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
  + Sử dụng biến **$GLOBALS['']**
 <img src="http://imageshack.com/a/img924/1606/B3KFvr.png">
 - Biến cục bộ là biến chỉ sử dụng được trong hàm chứ nó. Nghĩa là nó chỉ được dùng trong vùng dấu **{ }** chứa nó.
+
+## Hoàn thanhg Task.
