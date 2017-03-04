@@ -2,7 +2,7 @@
 ---
   Thực hiện: **Phạm Văn Đạt**
 
-  Cập nhập lần cuối: *26/2/2017*
+  Cập nhập lần cuối: *4/3/2017*
 
 # Mục lục 
 [1. Giới thiệu về PHP](#1)        
@@ -284,4 +284,4 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <img src="http://imageshack.com/a/img924/1606/B3KFvr.png">
 - Biến cục bộ là biến chỉ sử dụng được trong hàm chứ nó. Nghĩa là nó chỉ được dùng trong vùng dấu **{ }** chứa nó.
 
-## Hoàn thanhg Task.
+## Hoàn thành Task.
