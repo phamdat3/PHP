@@ -235,13 +235,17 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 - Kiểm tra tính hợp lệ của dữ liệu. Sử dụng hàm `preg_match`
 - Các dùng hàm **preg_match**: `(preg_match('/ky_tu_can_tim_trong_chuoi/', $bienchuoi))`
 
-<img src="http://imageshack.com/a/img922/7537/DTm3mF.png", "http://imageshack.com/a/img923/9702/lpgbKC.png">
+<img src="http://imageshack.com/a/img922/7537/DTm3mF.png">
+<img src="http://imageshack.com/a/img923/9702/lpgbKC.png">
 - Tìm ký tự nằm trong khoảng nào đó.
-<img src="http://imageshack.com/a/img923/1083/Jq1A2d.png" "http://imageshack.com/a/img922/6244/nlR0sr.png">
+<img src="http://imageshack.com/a/img923/1083/Jq1A2d.png">
+<img src="http://imageshack.com/a/img922/6244/nlR0sr.png">
 - Kiểm tra ký tự đầu tiên
-<img src="http://imageshack.com/a/img922/360/exkWZy.png, http://imageshack.com/a/img923/5765/o5Vaa5.png">
+<img src="http://imageshack.com/a/img922/360/exkWZy.png">
+<img src="http://imageshack.com/a/img923/5765/o5Vaa5.png">
 - Kiểm tra ký tự kết thúc
-<img src="http://imageshack.com/a/img924/6122/0YFhlv.png, http://imageshack.com/a/img923/6109/9avw9i.png">
+<img src="http://imageshack.com/a/img924/6122/0YFhlv.png">
+<img src="http://imageshack.com/a/img923/6109/9avw9i.png">
 
 <a name="24"></a>
 ##24. Hàm(fuction)
