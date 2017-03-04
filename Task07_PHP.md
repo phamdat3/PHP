@@ -41,6 +41,7 @@
 - Để có thể thử cá đoạn code về web của chúng ta môt cách giễ dành thì chúng ta không thể nào mà đẩy chũng lên website để thử vì nó khá tốn công và tốn thời gian. Vì thế chũng ta nên tạo 1 web server ảo trên chính máy của chũng ta để thử và khi đã ổn định rồi thì chũng ta mới đẩy lên.
 - Có hai loại web server ảo phổ biến là **wampp** và **xampp** chũng ta hãy tải 1 trong hai về để cài đặt và sử dụng.
 - Sau khi cài đặt song chũng ta hay truy cập vào rang web **localhost**
+
 <img src="http://imageshack.com/a/img921/138/FNV29t.png">
 - Tạo một trang PHP cow bản:
  + Tạo một file để viết PHP với đường dẫn là `Local Disk(C:)\wamp\www` và có đuôi là `.php`
@@ -89,10 +90,9 @@
  + Vào thư mục **htppd.conf** để sửa một số thông tin có liên quan về cổng.
  + Đi đến dòng có hiển thị: 
 
-  <img src="http://imageshack.com/a/img923/5220/8leeZF.png">
+<img src="http://imageshack.com/a/img923/5220/8leeZF.png">
  + Thay đổi:
-
- <img src="http://imageshack.com/a/img923/8556/ltbdTj.png">
+<img src="http://imageshack.com/a/img923/8556/ltbdTj.png">
  + Lưu lại và khỏi động lại.
  + Chúng ta thử đăng nhập vào localhost. Giờ chũng ta không đăng nhập vào đường dẫn là **localhost** mà chũng ta phải đăng nhập vào **loaclhost:30** (chúng ta đã sử thành 30).
 - Thay đổi thư mục lưu trữ các code mình viết.
@@ -114,6 +114,7 @@
 <a name="8"></a>
 ##8. echo_print mã html
 - Có thể Chèn PHP vào HTML để dùng hàm echo rồi in ra màn hình.
+
 <img src="http://imageshack.com/a/img921/8999/LxZV2U.png">
 - Vì bây giờ đoạn văn bản in ra là dùng theo PHP nên ta có thể chèn thêm biến bất kỳ vào trong đoạn vă bản được.
 <img src="http://imageshack.com/a/img921/3218/EsOYot.png">
@@ -128,6 +129,7 @@
 <a name="9"></a>
 ##9. Biểu thức nối chuỗi(concatenation)
 - Để 2 chuỗi khi xuất ra màn hình cách nhau bởi một dấu cách thì chúng ta dùng `$bien1.' '.$bien2`. Dấu `.` có thể thay bằng dấu `,`.
+
 <img src="http://imageshack.com/a/img924/6696/exIWoT.png">
 <img src="http://imageshack.com/a/img922/3632/BEaiwW.png">
 - Nối thêm một đoạn vào nữa thì dùng `$bien .= "noi dung them";`
@@ -136,6 +138,7 @@
 ##10. Nhúng PHP vào trang HTML
 - Khai báo trên cùng chủ yếu nên khai bảo biến, mảng,kết nối... muốn sử dụng trong chương trình.
 - Ở giữa chủ yếu để đưa ra kết quả và html format.
+
 <img src="http://imageshack.com/a/img922/8394/ZXJAdt.png">
 - Ở cuối chủ yếu dùng để hủy giá trị biến, mảng, kết nôi
 
@@ -148,11 +151,12 @@
 ##13. Biểu thức gán
 - Chungs ta có thể gán giá trị cho biến theo nhiều cách.
   + Gán thẳng cho biến luôn:
-  <img src="http://imageshack.com/a/img924/741/kFkCYE.png">
+  
+<img src="http://imageshack.com/a/img924/741/kFkCYE.png">
   + Gán thông qua biến khác:
-  <img src="http://imageshack.com/a/img922/4641/uvSlfB.png">
+<img src="http://imageshack.com/a/img922/4641/uvSlfB.png">
   + Chúng ta còn có thể gán được cả phép tóan cho biến:
-  <img src="http://imageshack.com/a/img924/2075/SNLmh4.png">
+<img src="http://imageshack.com/a/img924/2075/SNLmh4.png">
 
 <a name="14"></a>
 ##14. Biểu thức toán học
@@ -175,6 +179,7 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <a name="16"></a>
 ##16. Biểu thức so sánh
 - So sánh giá trị của hai biến.
+
 <img src="http://imageshack.com/a/img922/1231/OQv1k5.p">
 - So sánh  kiểu dữ liệu của ha biến `===`.
 <img src="http://imageshack.com/a/img923/4831/5ZeoTT.png">
@@ -183,6 +188,7 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <a name="17"></a>
 ##17. Biểu thức quan hệ(logic)
 - Dạng 1: biểu thức quan hệ **end** ký hiệu là `&&`.
+
 <img src="http://imageshack.com/a/img921/2171/7QKHaN.png">
 - Dạng 2: Biểu thức quan hệ **or** ký hiệu là `||`.
 <img src="http://imageshack.com/a/img922/7167/T2018P.png">
@@ -195,17 +201,20 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 ##18. Hàm die và exit
 - Dùng để thoát khỏi chương trình và thông báo cho người dùng biết có một lỗi nào đó. Và đưa ra lỗi cho người dùng biết.
 - Ban đầu.
+
 <img src="http://imageshack.com/a/img924/4586/M5ZHUO.png">
  + Khi cho thêm hàm `die`. Thì các dòng lệnh sau thẻ `die` sẽ không được đọc đến và k được biên dịch ra mà chỉ bien dịch và dữ lại các câu lệnh trước thẻ `die`.
 
- <img src="http://imageshack.com/a/img923/944/aRhUYE.png">
+<img src="http://imageshack.com/a/img923/944/aRhUYE.png">
 
  + Khi cho thêm thẻ `exit`. Thì các dòng lệnh sau thẻ `exit` sẽ không được đọc đến và chỉ đọc đk những thẻ trước nó và không được lưu dữ lại àm ó sẽ thoát ra khỏi luôn.
- <img src="http://imageshack.com/a/img923/5084/Lcpj5r.png">
+
+<img src="http://imageshack.com/a/img923/5084/Lcpj5r.png">
 
 <a name="19"></a>
 ##19. Vòng lặp While và do while.
 - Vòng lặp do while: Thực hiện câu lệnh trước rồi kiểm tra điều kiện, nên số lần lặp ít nhất là 1.
+
 <img src="http://imageshack.com/a/img923/7771/0j2mFZ.png">
 - Vòng lặp While: Thực hiện kiểm tra điều kiện trước sau đó mói thực hiện lệnh, nên số lần lặp ít nhất là 0.
 <img src="http://imageshack.com/a/img923/7106/W3DusA.png">
@@ -213,6 +222,7 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <a name="20"></a>
 ##20. Vòng lặp for
 - Vòng lặp mà chúng ta có thể kiểm xoát được biến khỏi tạo dan đầu và số vòng lăp và lặp như thế nào ngay từ đâu.
+
 <img src="http://imageshack.com/a/img924/2610/SAUazw.png"> 
 
 <a name="21"></a>
@@ -248,13 +258,28 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <img src="http://imageshack.com/a/img923/6109/9avw9i.png">
 
 <a name="24"></a>
-##24. Hàm(fuction)
+##24. Hàm(function)
+- Khai báo hàm `function ten_ham(){.....}`
+- Lời gọi hàm `ten_ham();`
+
+<img src="http://imageshack.com/a/img923/8916/k3afMV.png">
 
 <a name="25"></a>
 ##25. Hàm với tham số
 
 <a name="26"></a>
 ##26. Hàm với giá trị trả về
+- Có thể trả về dược cả số và chuỗi ký tự.
+
+<img src="http://imageshack.com/a/img924/1617/ju0oag.png">
+<img src="http://imageshack.com/a/img923/315/e6ab1R.png">
 
 <a name="27"></a>
 ##27. Biến toàn cục và biến cục bộ
+- Biến toàn cụ là biến sử dụng trong toàn bộ bài code, muốn sử dụng bến toàn cục để dùng trong một hàm nào đó thì ta có 2 chách:
+ + Sử dụng **global**
+ 
+<img src="http://imageshack.com/a/img922/9812/iY84XJ.png">
+ + Sử dụng biến **$GLOBALS['']**
+<img src="http://imageshack.com/a/img924/1606/B3KFvr.png">
+- Biến cục bộ là biến chỉ sử dụng được trong hàm chứ nó. Nghĩa là nó chỉ được dùng trong vùng dấu **{ }** chứa nó.
