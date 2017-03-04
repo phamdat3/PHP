@@ -197,7 +197,9 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 - Ban đầu.
 <img src="http://imageshack.com/a/img924/4586/M5ZHUO.png">
  + Khi cho thêm hàm `die`. Thì các dòng lệnh sau thẻ `die` sẽ không được đọc đến và k được biên dịch ra mà chỉ bien dịch và dữ lại các câu lệnh trước thẻ `die`.
- <src img="http://imageshack.com/a/img923/944/aRhUYE.png">
+
+ <img src="http://imageshack.com/a/img923/944/aRhUYE.png">
+
  + Khi cho thêm thẻ `exit`. Thì các dòng lệnh sau thẻ `exit` sẽ không được đọc đến và chỉ đọc đk những thẻ trước nó và không được lưu dữ lại àm ó sẽ thoát ra khỏi luôn.
  <img src="http://imageshack.com/a/img923/5084/Lcpj5r.png">
 
@@ -211,20 +213,35 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <a name="20"></a>
 ##20. Vòng lặp for
 - Vòng lặp mà chúng ta có thể kiểm xoát được biến khỏi tạo dan đầu và số vòng lăp và lặp như thế nào ngay từ đâu.
-<img src=""> 
+<img src="http://imageshack.com/a/img924/2610/SAUazw.png"> 
 
 <a name="21"></a>
 ##21. Break và continue
 - **Break**: Dừng công việc (vd như dừng vòng lặp) và thoát khỏi và không đọc các lênh phái sau.
-<img src="">
+
+<img src="http://imageshack.com/a/img924/5927/RRpoB8.png">
 - **Continue**: Tiếp tục các câu lệnh phía sau.
-<img src=""
+<img src="http://imageshack.com/a/img924/2694/0gBJ7U.png">
 
 <a name="22"></a>
 ##22. Cấu trúc rẽ nhánh Switch
+- Bắt niến nào đó trong nhiều trường hợp.
+
+<img src="http://imageshack.com/a/img924/1776/szXW1k.png">
+- Chú ý: Switch chỉ so sánh bằng không có so sánh lớn hơn hoặc nhỏ hơn.
 
 <a name="23"></a>
 ##23. Expression matching
+- Kiểm tra tính hợp lệ của dữ liệu. Sử dụng hàm `preg_match`
+- Các dùng hàm **preg_match**: `(preg_match('/ky_tu_can_tim_trong_chuoi/', $bienchuoi))`
+
+<img src="http://imageshack.com/a/img922/7537/DTm3mF.png, http://imageshack.com/a/img923/9702/lpgbKC.png">
+- Tìm ký tự nằm trong khoảng nào đó.
+<img src="http://imageshack.com/a/img923/1083/Jq1A2d.png, http://imageshack.com/a/img922/6244/nlR0sr.png">
+- Kiểm tra ký tự đầu tiên
+<img src="http://imageshack.com/a/img922/360/exkWZy.png, http://imageshack.com/a/img923/5765/o5Vaa5.png">
+- Kiểm tra ký tự kết thúc
+<img src="http://imageshack.com/a/img924/6122/0YFhlv.png, http://imageshack.com/a/img923/6109/9avw9i.png">
 
 <a name="24"></a>
 ##24. Hàm(fuction)
