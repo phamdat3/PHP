@@ -1,6 +1,6 @@
 # Bài tập PHP
 
-*Người thực hiện:* **Phạm Văn Đạt*
+Người thực hiện: *Phạm Văn Đạt*
 ---
 
 ## Menu
