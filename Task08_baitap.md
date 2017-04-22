@@ -1,7 +1,8 @@
 # Bài tập PHP
 
-**Người thực hiện:** *Phạm Văn Đạt*
+*Người thực hiện:* **Phạm Văn Đạt*
 ---
+
 ## Menu
 [Bài 01: Giải phương trình bậc nhất một ẩn bằng PHP](#1)  
 [Bài 02: Giải phương trình bậc hai một ẩn bằng PHP](#2)  
