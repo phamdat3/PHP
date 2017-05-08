@@ -43,8 +43,10 @@
 - Sau khi cài đặt song chũng ta hay truy cập vào rang web **localhost**
 
 <img src="http://imageshack.com/a/img921/138/FNV29t.png">
-- Tạo một trang PHP cow bản:  
+- Tạo một trang PHP cow bản:
+
  + Tạo một file để viết PHP với đường dẫn là `Local Disk(C:)\wamp\www` và có đuôi là `.php`  
+
  + Viết một đoạn với thẻ đóng mở:  
  <img src="http://imageshack.com/a/img922/6791/HBVXgb.png">
  + Sau đó trúng ta ra trang web **localhost** chũng ta gõ thêm vào là *localhost/ten_file.php*
