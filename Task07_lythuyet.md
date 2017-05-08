@@ -35,7 +35,7 @@
 
 # Nội dung.
 <a name="1"></a>
-##1. Giới thiệu về PHP
+## 1. Giới thiệu về PHP
 - **PHP** (Hypertext Preprocessor) là một ngôn ngữ lập trình kịch bản hay một loại mã lệnh chủ yếu được dùng để phát triển các ứng dụng viết cho máy chủ(server), mã nguồn mở, dùng cho mục đích tổng quát. Nó rất thích hợp với web và có thể dễ dàng nhúng vào trang HTML. Do được tối ưu hóa cho các ứng dụng web, tốc độ nhanh, nhỏ gọn, cú pháp giống C và Java, dễ học và thời gian xây dựng sản phẩm tương đối ngắn hơn so với các ngôn ngữ khác nên PHP.
 - Để tạo một trang Web động thì ta cần sử dụng ngôn ngữ PHP và hệ quản trị cơ sở dữ liệu (ví dụ như SQL) 
 - Để có thể thử cá đoạn code về web của chúng ta môt cách giễ dành thì chúng ta không thể nào mà đẩy chũng lên website để thử vì nó khá tốn công và tốn thời gian. Vì thế chũng ta nên tạo 1 web server ảo trên chính máy của chũng ta để thử và khi đã ổn định rồi thì chũng ta mới đẩy lên.
@@ -52,13 +52,13 @@
  <img src="http://imageshack.com/a/img922/855/6XwSeW.png">
 
 <a name="2"></a>
-##2. Nhúng PHP vào trang HTML
+## 2. Nhúng PHP vào trang HTML
 - File được lưu phải có đuôi là `.php` thì mới có thể nhúng PHP vào trang HTML, nếu không để đuôi đó thì nó xẽ bỏ qua luôn không được đọc đoạn PHP đó.
 - **echo**: là hàm để in ra một chuỗi dạng text, thẻ HTML. Nội dung cần hiển thị có thể nằm trong dấu nháy đợn hoặc nháy kép.
 - **print**: cũng tương tự như hàm **echo**, có thể in ra thêm các định dạng.
 
 <a name="3"></a>
-##3. Biến và chú thích
+## 3. Biến và chú thích
 - Cài Web server. Sau đó bật lên và lên trình duyệt truy cập vào trang `localhost`.
 - Tạo một thư mục trong thư mục `www`.
 - Commen: Không có hiệu lục gì khi viết code chỉ để giải thích.
@@ -82,7 +82,7 @@
 ```
 
 <a name="4"></a>
-##4. Cấu hình Web Server
+## 4. Cấu hình Web Server
 - Nếu bạn có cài một số phầm mềm khác phần mềm bạn đang cài mà chưa gỡ bỏ hoàn toàn thì nó xẽ bị lỗi xung đọt cổng với nhau khi bạn vào **localhost**.
 **Chú ý** Nếu bạn bị sung đột cổng mới thay đổi còn không thì chũng ta không nên thay đổi.
 - Cách giải quyết:
@@ -98,21 +98,21 @@
 - Thay đổi thư mục lưu trữ các code mình viết.
 
 <a name="5"></a>
-##5. Hàm phpinfo()
+## 5. Hàm phpinfo()
 
 <a name="6"></a>
-##6. Định dạng code (indentation)
+## 6. Định dạng code (indentation)
 - Việc PHP tự tìm ra lỗi là hơi khó nên khi ta viết mã code thì phải phân bố cục từng phần thụt ra và thụt vào hợp lý cho dễ dàng nhìn từng phần một. Để khi ta tìm lỗi hay sửa lỗi thì dễ dàng hơn.
 - Chú ta có thể dùng thêm các comments để dễ hiểu từng phần hơn
 
 <a name="7"></a>
-##7. Sử dụng echo, print
+## 7. Sử dụng echo, print
 - **echo**: là hàm xuất một chuỗi ra màn hình web.
 - **print**: tương tụ hàm echo.
 - Nhưng hàm echo dduocj sử dụng nhiều hơn.
 
 <a name="8"></a>
-##8. echo_print mã html
+## 8. echo_print mã html
 - Có thể Chèn PHP vào HTML để dùng hàm echo rồi in ra màn hình.
 
 <img src="http://imageshack.com/a/img921/8999/LxZV2U.png">
@@ -127,7 +127,7 @@
 <img src ="http://imageshack.com/a/img923/7436/zILSld.png">
 
 <a name="9"></a>
-##9. Biểu thức nối chuỗi(concatenation)
+## 9. Biểu thức nối chuỗi(concatenation)
 - Để 2 chuỗi khi xuất ra màn hình cách nhau bởi một dấu cách thì chúng ta dùng `$bien1.' '.$bien2`. Dấu `.` có thể thay bằng dấu `,`.
 
 <img src="http://imageshack.com/a/img924/6696/exIWoT.png">
@@ -135,7 +135,7 @@
 - Nối thêm một đoạn vào nữa thì dùng `$bien .= "noi dung them";`
 
 <a name="10"></a>
-##10. Nhúng PHP vào trang HTML
+## 10. Nhúng PHP vào trang HTML
 - Khai báo trên cùng chủ yếu nên khai bảo biến, mảng,kết nối... muốn sử dụng trong chương trình.
 - Ở giữa chủ yếu để đưa ra kết quả và html format.
 
@@ -143,12 +143,12 @@
 - Ở cuối chủ yếu dùng để hủy giá trị biến, mảng, kết nôi
 
 <a name="11"></a>
-##11. Biểu thức điều kiện if else
+## 11. Biểu thức điều kiện if else
 - Nếu trong câu điều kiện chỉ có 1 lệnh thì khong cần dấu ngoặc `{}` nếu từ 2 lệnh trở lên thì cần phải có dấu ngoặc.
 - Với câu điều kiện if else lồng nhau thì phải chú ý đền các dấu ngoặc.
 
 <a name="13"></a>
-##13. Biểu thức gán
+## 13. Biểu thức gán
 - Chungs ta có thể gán giá trị cho biến theo nhiều cách.
   + Gán thẳng cho biến luôn:
   
@@ -159,14 +159,14 @@
 <img src="http://imageshack.com/a/img924/2075/SNLmh4.png">
 
 <a name="14"></a>
-##14. Biểu thức toán học
+## 14. Biểu thức toán học
 - Chúng ta có thể thục hiện các phép toán như trên các ngôn ngữ khác để có thể tính toán như bình thường. 
 chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy số dư.
 
 <img src="http://imageshack.com/a/img924/4691/GcoEvd.png">
 
 <a name="15"></a>
-##15. Toán tử tăng và gảm(increment and decrement operator)
+## 15. Toán tử tăng và gảm(increment and decrement operator)
 - Khi chúng ta dùng `$a++ hoặc $a--` nghĩa là chúng lấy giá trị của **a** trước để in ra hoặc dùng cho các phép toán trước rồi nó mới tăng hoạc giảm giá trị cảu nó sau.
 - Khi chúng ta dùng `++$a hoặc --$a` là chúng ta tăng hoạc giảm chũng trước rồi in ra hoặc dùng để tính toán.
 
@@ -177,7 +177,7 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <img src="http://imageshack.com/a/img922/7024/sAmZ2Z.png">
 
 <a name="16"></a>
-##16. Biểu thức so sánh
+## 16. Biểu thức so sánh
 - So sánh giá trị của hai biến.
 
 <img src="http://imageshack.com/a/img922/1231/OQv1k5.png">
@@ -186,7 +186,7 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <img src="http://imageshack.com/a/img923/6172/i8mxtG.png">
 
 <a name="17"></a>
-##17. Biểu thức quan hệ(logic)
+## 17. Biểu thức quan hệ(logic)
 - Dạng 1: biểu thức quan hệ **end** ký hiệu là `&&`.
 
 <img src="http://imageshack.com/a/img921/2171/7QKHaN.png">
@@ -198,7 +198,7 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <img src="http://imageshack.com/a/img921/6038/27bJIq.png">
 
 <a name="18"></a>
-##18. Hàm die và exit
+## 18. Hàm die và exit
 - Dùng để thoát khỏi chương trình và thông báo cho người dùng biết có một lỗi nào đó. Và đưa ra lỗi cho người dùng biết.
 - Ban đầu.
 
@@ -212,7 +212,7 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <img src="http://imageshack.com/a/img923/5084/Lcpj5r.png">
 
 <a name="19"></a>
-##19. Vòng lặp While và do while.
+## 19. Vòng lặp While và do while.
 - Vòng lặp do while: Thực hiện câu lệnh trước rồi kiểm tra điều kiện, nên số lần lặp ít nhất là 1.
 
 <img src="http://imageshack.com/a/img923/7771/0j2mFZ.png">
@@ -220,13 +220,13 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <img src="http://imageshack.com/a/img923/7106/W3DusA.png">
 
 <a name="20"></a>
-##20. Vòng lặp for
+## 20. Vòng lặp for
 - Vòng lặp mà chúng ta có thể kiểm xoát được biến khỏi tạo dan đầu và số vòng lăp và lặp như thế nào ngay từ đâu.
 
 <img src="http://imageshack.com/a/img924/2610/SAUazw.png"> 
 
 <a name="21"></a>
-##21. Break và continue
+## 21. Break và continue
 - **Break**: Dừng công việc (vd như dừng vòng lặp) và thoát khỏi và không đọc các lênh phái sau.
 
 <img src="http://imageshack.com/a/img924/5927/RRpoB8.png">
@@ -234,14 +234,14 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <img src="http://imageshack.com/a/img924/2694/0gBJ7U.png">
 
 <a name="22"></a>
-##22. Cấu trúc rẽ nhánh Switch
+## 22. Cấu trúc rẽ nhánh Switch
 - Bắt niến nào đó trong nhiều trường hợp.
 
 <img src="http://imageshack.com/a/img924/1776/szXW1k.png">
 - Chú ý: Switch chỉ so sánh bằng không có so sánh lớn hơn hoặc nhỏ hơn.
 
 <a name="23"></a>
-##23. Expression matching
+## 23. Expression matching
 - Kiểm tra tính hợp lệ của dữ liệu. Sử dụng hàm `preg_match`
 - Các dùng hàm **preg_match**: `(preg_match('/ky_tu_can_tim_trong_chuoi/', $bienchuoi))`
 
@@ -258,24 +258,24 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <img src="http://imageshack.com/a/img923/6109/9avw9i.png">
 
 <a name="24"></a>
-##24. Hàm(function)
+## 24. Hàm(function)
 - Khai báo hàm `function ten_ham(){.....}`
 - Lời gọi hàm `ten_ham();`
 
 <img src="http://imageshack.com/a/img923/8916/k3afMV.png">
 
 <a name="25"></a>
-##25. Hàm với tham số
+## 25. Hàm với tham số
 
 <a name="26"></a>
-##26. Hàm với giá trị trả về
+## 26. Hàm với giá trị trả về
 - Có thể trả về dược cả số và chuỗi ký tự.
 
 <img src="http://imageshack.com/a/img924/1617/ju0oag.png">
 <img src="http://imageshack.com/a/img923/315/e6ab1R.png">
 
 <a name="27"></a>
-##27. Biến toàn cục và biến cục bộ
+## 27. Biến toàn cục và biến cục bộ
 - Biến toàn cụ là biến sử dụng trong toàn bộ bài code, muốn sử dụng bến toàn cục để dùng trong một hàm nào đó thì ta có 2 chách:
  + Sử dụng **global**
  
