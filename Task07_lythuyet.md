@@ -304,37 +304,54 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 - Biến cục bộ là biến chỉ sử dụng được trong hàm chứ nó. Nghĩa là nó chỉ được dùng trong vùng dấu **{ }** chứa nó.
 
 <a name="28"></a>
+## 28. Phương thức GET và POST trong php
 
 <a name="29"></a>
+## 29. Các hàm xử lý chuỗi trong php
 
 <a name="30"></a>
+## 30. Giải thuật đệ quy trong php
 
 <a name="31"></a>
+## 31. Các hàm xử lý mảng trong php
 
 <a name="32"></a>
+## 32. Các hàm xử lý file trong php
 
 <a name="33"></a>
+## 33. Expression matching
 
 <a name="34"></a>
+## 34. Upload file lên server với php
 
 <a name="35"></a>
+## 35. Các hàm kiểm tra dữ liệu trong php
 
 <a name="36"></a>
+## 36. Session và cookie trong php
 
 <a name="37"></a>
+## 37. Hàm isset() và empty() trong php
 
 <a name="38"></a>
+## 38. Xử lý truy vấn dữ liệu MySQL với PHP
 
 <a name="39"></a>
+## 39. Lệnh require - require_once - include - include_once trong PHP
 
 <a name="40"></a>
+## 40. Xử lý ngày tháng trong PHP
 
 <a name="41"></a>
+## 41. Các hàm xử lý mảng trong php
 
 <a name="42"></a>
+## 42. Tìm hiểu hàm header trong PHP
 
 <a name="43"></a>
+## 43. PHP Filter - Hàm filter_var trong PHP
 
 <a name="44"></a>
+## 44. Header Request và Header Response
 
 ## Hoàn thành Task.
