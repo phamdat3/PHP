@@ -305,6 +305,76 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 
 <a name="28"></a>
 ## 28. Phương thức GET và POST trong php
+* Phương thức get.
+ Là phương thức lấy dữ liệu qua đường đẫn URL. Server nhận và phân tích dữ liệu nhữ gì nằm sau dấu *?* là hững thứ mà client gửi lên.
+* Server nhận dữ liệu
+ * Tất cả dữ liệu mà Client gửi lên đều đươc Server lưu trong một biến cục bộ **$_GET** dạng mảng và theo quy luật **key=>value**
+ * Ví dụ:
+ Cho đoạn Code
+```
+<?php 
+foreach ($_GET as $bien => $gt)
+{
+    echo "$bien  =>  $gt <br/>";
+}
+?>
+```
+ Ta gõ đường dẫn `http://localhost/git.php?1=2&3=g`
+Ta được.
+
+<img src="">
+
+* Phuong thức post
+  Phương thức post có tính bảo mật cao hơn vì Client gửi dữ liệu lên thông qua Form nên nó bị ẩn đi.
+* Client gửi lên
+ Phương thức post gửi dư liệu lên thông qua Form đăng nhạp HTML các giá trị đó được định nghĩa trong input gồm các kiểu (textbox,radio, password, textarea, hidden) và được nhận dạng thông qua name của input đó.
+* Server nhận dữ liệu
+ Tương tụ như get thì post ũng lưu dữ liệu vào biến cục bộ $_POST do PHP tạo ra.
+ Để lấy dữ liệu ta làm như sau.
+```
+  if (isset($_POST['id']))
+  {
+    $id = $_POST['id'];
+  }
+```
+ **Chú ý:** hàm isset($bien) dùng để có dữ liệu hay k.
+* Ví dụ: Tạo thư mục post.php trong server.
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form method="POST">
+            Username: <input type="text" name="tên" value=""/> <br/>
+            password: <input type="password" name="password" value=""/><br/>
+            <input type="submit" name="form_click" value="Gửi"/>
+        </form>
+        <?php
+                if (isset($_POST['form_click'])){
+                    echo 'Tên đăng nhập là: ' . $_POST['tên'];
+                    echo '<br/>';
+                    echo 'Mật khẩu là: ' . $_POST['password'];
+                }
+           ?>
+    </body>
+</html>
+```
+ * Ta đăng nhập vs đường dẫn `http://localhost/post.php` chúng ta đăng nhập vào form sau đó nhấp **Gửi** rồi xem kết quả.
+
+<img src="">
+
+* So sánh gửi Get và Post
+|      | Post | Get |
+|------|------|-----|
+| **Giống nhau**| Gửi dữ liệu lên server | Gửi dữ liệu lên server |
+|**Khác nhau**| Bảo mật hơn, không nhìn thấy bằng mắt thương| Kém bảo mật có thể nhìn thấy bằng mắt thường|
+|          | Không tường minh | Tường minh|
+|          | Chận hơn vì cần phải gửi lên Server để duyệt | Nhanh hơn vì nó được kiểm tra trên Brower|
+
+
 
 <a name="29"></a>
 ## 29. Các hàm xử lý chuỗi trong php
