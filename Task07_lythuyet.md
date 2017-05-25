@@ -31,7 +31,24 @@
 [24. Hàm(fuction)](#24)                    
 [25. Hàm với tham số](#25)               
 [26. Hàm với giá trị trả về](#26)               
-[27. Biến toàn cục và biến cục bộ](#27)            
+[27. Biến toàn cục và biến cục bộ](#27)                              
+[28. Phương thức GET và POST trong php](#28)                
+[29. Các hàm xử lý chuỗi trong php](#29)                   
+[30. Giải thuật đệ quy trong php](#30)                
+[31. Các hàm xử lý mảng trong php](#31)                   
+[32. Các hàm xử lý file trong php](#32)                    
+[33. Expression matching](#33)                    
+[34. Upload file lên server với php](#34)                    
+[35. Các hàm kiểm tra dữ liệu trong php](#35)               
+[36. Session và cookie trong php](#36)               
+[37. Hàm isset() và empty() trong php](#37)                 
+[38. Xử lý truy vấn dữ liệu MySQL với PHP](#38)                
+[39. Lệnh require - require_once - include - include_once trong PHP](#39)                   
+[40. Xử lý ngày tháng trong PHP](#40)                
+[41. Các hàm xử lý mảng trong php](#41)                   
+[42. Tìm hiểu hàm header trong PHP](#42)                    
+[43. PHP Filter - Hàm filter_var trong PHP](#43)                    
+[44. Header Request và Header Response](#44)                    
 
 # Nội dung.
 <a name="1"></a>
@@ -285,5 +302,39 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
  + Sử dụng biến **$GLOBALS['']**
 <img src="http://imageshack.com/a/img924/1606/B3KFvr.png">
 - Biến cục bộ là biến chỉ sử dụng được trong hàm chứ nó. Nghĩa là nó chỉ được dùng trong vùng dấu **{ }** chứa nó.
+
+<a name="28"></a>
+
+<a name="29"></a>
+
+<a name="30"></a>
+
+<a name="31"></a>
+
+<a name="32"></a>
+
+<a name="33"></a>
+
+<a name="34"></a>
+
+<a name="35"></a>
+
+<a name="36"></a>
+
+<a name="37"></a>
+
+<a name="38"></a>
+
+<a name="39"></a>
+
+<a name="40"></a>
+
+<a name="41"></a>
+
+<a name="42"></a>
+
+<a name="43"></a>
+
+<a name="44"></a>
 
 ## Hoàn thành Task.
