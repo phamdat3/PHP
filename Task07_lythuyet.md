@@ -362,7 +362,7 @@ Ta được.
     </body>
 </html>
 ```
-     * Ta đăng nhập vs đường dẫn `http://localhost/post.php` chúng ta đăng nhập vào form sau đó nhấp **Gửi** rồi xem kết quả.
+* Ta đăng nhập vs đường dẫn `http://localhost/post.php` chúng ta đăng nhập vào form sau đó nhấp **Gửi** rồi xem kết quả.
 
 <img src="">
 
@@ -374,11 +374,150 @@ Ta được.
 |**Khác nhau**| Bảo mật hơn, không nhìn thấy bằng mắt thương| Kém bảo mật có thể nhìn thấy bằng mắt thường|
 |          | Không tường minh | Tường minh|
 |          | Chận hơn vì cần phải gửi lên Server để duyệt | Nhanh hơn vì nó được kiểm tra trên Brower|
-
-
+|**Khi nào dùng Get / Post**| Dữ liệu cần bảo mật, | ít bảo mật và dữ liệu bạn muốn quảng bá|
 
 <a name="29"></a>
 ## 29. Các hàm xử lý chuỗi trong php
+Ví dụ:
+```
+$str = "đang ăn tối";
+echo "Nam nói\"Cậu ấy $str\" "
+```
+Ở ví dụ này chúng ta cần chú ý đến dấu `/` và dấu `"` nằm cho đúng vị trí để chuỗi được nối đơn giản.
+** Các hàn sử lý chuỗi hay sử dụng**
+* addcslashes($str,$char_list) . Thêm dấu '/' vào trc các ký tự trong chuỗi $str mf ta liệt kê ở $char-list.
+```
+/ a..z là gồm các từ từ a => z
+echo (addcslashes('freetuts.net FREETUTS.NET', 'a..z'));
+// kết quả: \f\r\e\e\t\u\t\s.\n\e\t
+  
+echo '<br />';
+  
+// a..zA..Z là gồm các từ từ a => z và A => Z
+echo (addcslashes('freetuts.net FREETUTS.NET', 'a..zA..Z'));
+```
+* addslashes($str) . Thêm dấu `/` trc các ký tự `',",\` trong chuỗi $str
+```
+echo addslashes ("Freetuts's a website learning online");
+// Kết quả là Freetuts\'s a website learning online
+```
+* stripslshes($str). Xóa các ký tự `\`trong chuỗi $str
+```
+echo stripslashes("Mot so ham \\'xu ly \chuoi' trong PHP");
+// Kết quả Mot so ham 'xu ly chuoi' trong PHP
+```
+* crc32($str). chuyển chuỗi thàng một dãy số.
+```
+echo crc32 ('freetuts.net');
+// kết quả: -838644060
+```
+* explode($delimiter,$string). Hàm này chuyển chuỗi $string thành một mảng các phân tử mản là $delimiter
+```
+<?php
+
+$str = 'freetuts.net is a website free for you';
+  
+var_dump(explode(' ', $str));
+  
+/*Kết quả
+C:\wamp64\www\post.php:5:
+array (size=7)
+  0 => string 'freetuts.net' (length=12)
+  1 => string 'is' (length=2)
+  2 => string 'a' (length=1)
+  3 => string 'website' (length=7)
+  4 => string 'free' (length=4)
+  5 => string 'for' (length=3)
+  6 => string 'you' (length=3)
+*/
+?>
+```
+* implode($delimiter,$piecesarry). Chuyển mảng $piecesarry thành chuỗi.
+```
+echo implode(' ', array(
+    'freetuts',
+    'xin',
+    'chào',
+    'các',
+    'bạn'
+));
+// kêt quả là freetuts xin chào các bạn
+```
+* ord($string) . Trả về mã ASCII của ký tự đầu tiên của chuỗi $string
+```
+echo ord ('Ab');
+// kết quả: 65
+```
+* strlen($string) . Đếm số ký tự trong chuỗi
+```
+echo strlen('freetuts.net');
+// kết quả: 12
+```
+* str_work_count($str) . trả về số từ trong chuỗi
+```
+echo str_word_count('freetuts xin chào các bạn');
+// kết quả là 5
+```
+* str_repeat($str,int$n) . hàm lặp chuỗi $str$n lần
+```
+echo str_repeat( 'Hello', 5 );
+// Kết quả là HelloHelloHelloHelloHello
+```
+* str_replace($chuoitim,$chuoithaythe,$chuoinguon) . Tìm kiếm và thay thế chuỗi
+```
+$str = 'Freetuts Xin Chào Các Bạn';
+$str = str_replace( 'Freetuts', 'Freetuts.net', $str );
+echo $str; // kết quả là Freetuts.net Xin Chào Các Bạn
+```
+```
+$str = 'Freetuts Xin Chào Các Bạn';
+$str = str_replace( array('Freetuts', 'Xin Chào'), array('Freetuts.net', 'Hello'), $str );
+echo $str; // kết quả là Freetuts.net Hello Các Bạn
+```
+* md5($str) . Mã hóa chuỗi theo chuẩn md5 gồm 32 ký tụ
+```
+echo md5('pham van dat');
+// Kết quả:d33e45112b24f3062737ef5116092e0a
+```
+* sha1($string) . Mã hóa chuỗi theo chuẩn sha1 gồm 40 ký tự
+```
+echo sha1('pham van dat');
+// Kết quả:d6bc87d5ee95a511d83873ad24113c8c3460febf
+```
+* htmlentities($str) . Chuyển thể HTML sang dạng thực thể của cúng
+```
+echo htmlentities('<b>freetuts.net</b>');
+// Kết quả <b>freetuts.net</b>
+```
+* html_entity_decode($string) . Chuyển các ký tự thực dngj sang HTML
+```
+$str = htmlentities('<b>freetuts.net</b>');
+  
+echo 'Entity: ' . $str . '<br/>';
+echo 'Decode: ' . html_entity_decode($str);
+// kế quả: Entity: <b>freetuts.net</b>
+           Decode: freetuts.net
+```
+* strip_tags( $string, $allow_tags ) .  Bỏ các thẻ html trong chuỗi $string được khai báo ở $allow_tags
+```
+echo strip_tags('<b>freetuts.net</b>', 'b');
+
+```
+* echo strip_tags('<b>freetuts.net</b>', 'b'); . Lấy một chuỗi con nằm trong chuỗi $str bắt đầu từ ký tự thứ $start và chiều dài $length.
+```
+echo substr( 'freetuts.net',  0, 8);
+// Kết quả freetuts
+```
+* strstr( $string, $ky_tu_cho_truoc ) . Tách một chuỗi bắt đầu từ  $ky_tu_cho_truoc cho đến hết chuỗi.
+```
+echo strstr('freetuts.net Xin Chào', 'Xin');
+// Kết quả: Xin Chào
+```
+* strpos($str, $chuoi_tim ) . tìm vị trí của chuỗi $chuoi_tim trong chuỗi $str, kết quả trả về false nếu không tìm thấy.
+```
+echo strpos('freetuts.net chào các bạn', 'chào');
+// kết quả 13
+```
 
 <a name="30"></a>
 ## 30. Giải thuật đệ quy trong php
