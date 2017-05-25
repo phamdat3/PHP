@@ -306,10 +306,10 @@ chú ý phép `/` là phép lấy giá trị nguyên, phép `%` là phép lấy 
 <a name="28"></a>
 ## 28. Phương thức GET và POST trong php
 * Phương thức get.
- Là phương thức lấy dữ liệu qua đường đẫn URL. Server nhận và phân tích dữ liệu nhữ gì nằm sau dấu *?* là hững thứ mà client gửi lên.
+ ** Là phương thức lấy dữ liệu qua đường đẫn URL. Server nhận và phân tích dữ liệu nhữ gì nằm sau dấu *?* là hững thứ mà client gửi lên.
 * Server nhận dữ liệu
- * Tất cả dữ liệu mà Client gửi lên đều đươc Server lưu trong một biến cục bộ **$_GET** dạng mảng và theo quy luật **key=>value**
- * Ví dụ:
+ ** Tất cả dữ liệu mà Client gửi lên đều đươc Server lưu trong một biến cục bộ **$_GET** dạng mảng và theo quy luật **key=>value**
+ ** Ví dụ:
  Cho đoạn Code
 ```
 <?php 
@@ -362,11 +362,12 @@ Ta được.
     </body>
 </html>
 ```
- * Ta đăng nhập vs đường dẫn `http://localhost/post.php` chúng ta đăng nhập vào form sau đó nhấp **Gửi** rồi xem kết quả.
+ ** Ta đăng nhập vs đường dẫn `http://localhost/post.php` chúng ta đăng nhập vào form sau đó nhấp **Gửi** rồi xem kết quả.
 
 <img src="">
 
 * So sánh gửi Get và Post
+
 |      | Post | Get |
 |------|------|-----|
 | **Giống nhau**| Gửi dữ liệu lên server | Gửi dữ liệu lên server |
