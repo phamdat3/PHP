@@ -521,6 +521,20 @@ echo strpos('freetuts.net chào các bạn', 'chào');
 
 <a name="30"></a>
 ## 30. Giải thuật đệ quy trong php
+* Đệ quy tuyến tính.
+     * Là dạng chỉ gọi duy nhất một lần đến chính nó trong hàm.
+     * VD: Tính tổng các số nguyên từ 1 đến 10.
+```
+function tong($n)
+{
+     if($n=1)
+         return = 1;
+     return $n + tong($n-1);
+}
+```
+ Với cách giải này khi n=1 thì xuất ra kết quả luôn hay còn là điều kiện để vòng lặp của đệ quy dừng. biến n chạy từ n xuống tới 1 thì sẽ dừng lại và trả về kết quả. trong quá trình chạy xuống 1 đó nó đươc cộng dòng những số mà nó đã chạy qua. </br>
+ Ta tưởng tương nếu n=10. thì đệ quy sẽ chạy như sau. 10 + (10-1=9) + (9-1=8) + ...... + (2-1=1) + 1; 
+
 
 <a name="31"></a>
 ## 31. Các hàm xử lý mảng trong php
