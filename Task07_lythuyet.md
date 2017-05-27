@@ -619,9 +619,13 @@ function day($n)
  * **Ví dụ**
  * Đọc từng ký tự
 <img src="http://imageshack.com/a/img924/5418/sqbcfN.png">
+
 * Đọc từng dòng
+
 <img src="http://imageshack.com/a/img922/4829/IeMVKM.png">
+
 * Đọc cả file
+
 <img src="http://imageshack.com/a/img923/1153/aXxVZ5.png">
 
 **Ghi file** 
