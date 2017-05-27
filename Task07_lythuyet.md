@@ -614,7 +614,7 @@ function day($n)
  * Có 3 cách đọc file:
      * Đọc từng ký tự ta dùng hàn `fgetc($fp)` 
      * Đọc theo từng dòng ta dùng hàm `fgets($fp)` </br>
-     **Đối với hai cách đọc này thì ta dùng hàm `feof($fp)` được đặt trong vòng lặp While để sau khi đọc song dòng hay song ký tự thì chuyển sang dòng hay ký tự mới.
+     **Đối với hai cách đọc này thì ta dùng hàm `feof($fp)` được đặt trong vòng lặp While để sau khi đọc song dòng hay song ký tự thì chuyển sang dòng hay ký tự mới.**
      * Đọc hết file ta dùng hàm `fread($fp, $size)`. Trong đó $fp là đối tượng mở file, $size kích cỡ file cần đọc. Dùng hàm filesize($path) để tính size của file.
  * **Ví dụ**
  * Đọc từng ký tự
@@ -625,13 +625,17 @@ function day($n)
 <img src="http://imageshack.com/a/img923/1153/aXxVZ5.png">
 
 **Ghi file** 
- * Để ghi file ta dùng hàm fwrite($fp, $content) trong đó $fp là đối tượng file càn ghi, $content là nội dung cần ghi(được nằm trong file đó).
- *Ví dụ
+ * Để ghi file ta dùng hàm `fwrite($fp, $content)` trong đó `$fp` là đối tượng file càn ghi, `$content` là nội dung cần ghi(được nằm trong file đó).
+ * Ví dụ
      * Ta dùng thuộc tính **w**
 <img src="http://imageshack.com/a/img923/425/G728C5.png">
+
      * Ta dùng thuộc tính **a** và file `dat.txt` đã có sẵn.
+
 <img src="http://imageshack.com/a/img923/4012/IrqluO.png">
+
      * Ta dùng thuộc tính **a** và file `abc.txt` chưa có trong thư mục. Ta chứ ý tới số lần nhấp vào tải lại trang. Nhấp bao nhiêu lần thì file của chúng ta sẽ được tạo thêm dữ liệu chuyền vào bấy nhiêu lần.
+     
 <img src="http://imageshack.com/a/img922/4929/SoqYXR.png">
 <img src="http://imageshack.com/a/img922/3862/TmJp3Z.png">
 <img src="http://imageshack.com/a/img924/198/uInwd4.png">
