@@ -322,7 +322,7 @@ foreach ($_GET as $bien => $gt)
  Ta gõ đường dẫn `http://localhost/git.php?1=2&3=g`
 Ta được.
 
-<img src="">
+<img src="http://imageshack.com/a/img922/1764/TI9l6s.png">
 
 * Phuong thức post
   Phương thức post có tính bảo mật cao hơn vì Client gửi dữ liệu lên thông qua Form nên nó bị ẩn đi.
@@ -364,7 +364,7 @@ Ta được.
 ```
 * Ta đăng nhập vs đường dẫn `http://localhost/post.php` chúng ta đăng nhập vào form sau đó nhấp **Gửi** rồi xem kết quả.
 
-<img src="">
+<img src="http://imageshack.com/a/img922/6361/lo65x4.png">
 
 * So sánh gửi Get và Post
 
@@ -532,12 +532,104 @@ function tong($n)
      return $n + tong($n-1);
 }
 ```
- Với cách giải này khi n=1 thì xuất ra kết quả luôn hay còn là điều kiện để vòng lặp của đệ quy dừng. biến n chạy từ n xuống tới 1 thì sẽ dừng lại và trả về kết quả. trong quá trình chạy xuống 1 đó nó đươc cộng dòng những số mà nó đã chạy qua. </br>
- Ta tưởng tương nếu n=10. thì đệ quy sẽ chạy như sau. 10 + (10-1=9) + (9-1=8) + ...... + (2-1=1) + 1; 
 
+<img src="http://imageshack.com/a/img922/7403/N9Z1dL.png">
+ Với cách giải này khi n=1 thì xuất ra kết quả luôn hay còn là điều kiện để vòng lặp của đệ quy dừng. Biến n chạy từ n xuống tới 1 thì sẽ dừng lại và trả về kết quả tổng. Trong quá trình chạy xuống 1 đó nó đươc cộng dồn những số mà nó đã chạy qua. </br>
+ Ta tưởng tương nếu n=10. thì đệ quy sẽ chạy như sau. 10 + (10-1=9) + (9-1=8) + ...... + (2-1=1) + 1; 
+* Đệ quy nhị phân.
+     * Là hầm gọi về chính nó 2 lần.
+     * Vd: Bài toán thể hiện rõ nhất về dạng đẹ quy này là bài toán về dãy fibonacci. Dãy fibonacci là dãy bắt đầu từ 2 số 0 và 1 hoăc 1 và 1 mà số tiếp theo bằng tỏng 2 số kế trước nó.
+```
+function fibonacci($n)
+{
+     if ($n==1 || $n==2)
+         return 1;
+     return fibonacci($n-2) + fibonacci($n-1);
+}
+``` 
+<img src="http://imageshack.com/a/img922/4991/zSJSjq.png">
+* Đệ quy phi tuyến.
+     * Là đệ quy mà tỏng hàm có vòng lặp gọi lại chính nó.
+     * Vd:
+```
+function day($n)
+{
+    if ($n<6)
+        return $n;
+    else
+    {
+        $tong=0;
+        for($i=1;$i<$n;$i++)
+        {
+            $tong = $tong + day($n-$i);
+        }
+        return $tong;
+    }
+}
+```
+<img src="http://imageshack.com/a/img923/7245/3UpCzO.png">
+* Đệ quy hỗ tương.
+     * Là đệ quy mà có 2 hàm gọi tới nhau. Ví dụ như hàm A gọi tới hàm B và hàm B lại gọi tới hàm A.
+     * Vd:
+<img src="http://imageshack.com/a/img923/4646/MMz5HK.png">
 
 <a name="31"></a>
 ## 31. Các hàm xử lý mảng trong php
+**Mở file**
+ * Cú pháp mở file `open($path,$option)
+     * $path là đường dẫn đến file cần mở.
+     * $option là quyền cho phép thao tác trên file
+ * Danh sách các quyền.
+| Moden | Diễn giả |
+|-------|----------|
+| r | Read only(chỉ đọc) |
+| r+ | Read + Write(Đọc và viết) |
+| w | Write only(chỉ viết) |
+| w+1 | Write + Read. Xóa nội dung cũ của file và ghi nội dung mới cho file. Nếu trường hợp chưa có file thi file mới sẽ được tạo. |
+| a | Mở file dưới dạng append(kết nối) dữ kiệu, chỉ có thể viết nếu file tồn tại thì ghi tiếp nội dung, còn không có file thì file mới xẽ được tạo ra. |
+| a+ | Mở file dưới dạng append(kết nối) dữ liệu, Bao gồm viết và đọc file. Nếu file đã tồn tịa thì ghi tiếp vào file, còn chưa có file thì file mới sẽ được tạo ra. | 
+| b | Mở dưới dạng binary(nhị phân) |
+```
+ $path = 'abc.txt'; //có thể tương đối hoạc tuyệt đối.
+ $fp = @fopen($path, "r") // dù dấu @ để đề phòng trường hợp đường dẫ $path ta chuyền sai thì nó sẽ không bung lỗi ra màn hình.
+ if (!$fp) 
+ {
+    echo 'Mở file không thành công';
+ }
+ else
+ {
+    echo 'Mở file thành công';
+ }
+```
+<img src = "http://imageshack.com/a/img923/1415/M7Um6p.png">
+<img src =" http://imageshack.com/a/img924/3954/y4x2si.png">
+**Đọc file**
+ * Có 3 cách đọc file:
+     * Đọc từng ký tự ta dùng hàn `fgetc($fp)` 
+     * Đọc theo từng dòng ta dùng hàm `fgets($fp)` </br>
+     **Đối với hai cách đọc này thì ta dùng hàm `feof($fp)` được đặt trong vòng lặp While để sau khi đọc song dòng hay song ký tự thì chuyển sang dòng hay ký tự mới.
+     * Đọc hết file ta dùng hàm `fread($fp, $size). Trong đó $fp là đối tượng mở file, $size kích cỡ file cần đọc. Dùng hàm filesize($path) để tính size của file.
+ * **Ví dụ**
+ * Đọc từng ký tự
+<img src="http://imageshack.com/a/img924/5418/sqbcfN.png">
+ * Đọc từng dòng
+<img src="http://imageshack.com/a/img922/4829/IeMVKM.png">
+ * Đọc cả file
+<img src="http://imageshack.com/a/img923/1153/aXxVZ5.png">
+**Ghi file** 
+ * Để ghi file ta dùng hàm fwrite($fp, $content) trong đó $fp là đối tượng file càn ghi, $content là nội dung cần ghi(được nằm trong file đó).
+ *Ví dụ
+<img src="http://imageshack.com/a/img923/425/G728C5.png">
+<img src="http://imageshack.com/a/img923/4012/IrqluO.png">
+<img src="http://imageshack.com/a/img922/4929/SoqYXR.png">
+<img src="http://imageshack.com/a/img922/3862/TmJp3Z.png">
+<img src="http://imageshack.com/a/img924/198/uInwd4.png">
+
+
+
+
+
+
 
 <a name="32"></a>
 ## 32. Các hàm xử lý file trong php
