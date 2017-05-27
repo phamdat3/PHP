@@ -536,6 +536,7 @@ function tong($n)
 <img src="http://imageshack.com/a/img922/7403/N9Z1dL.png">
  Với cách giải này khi n=1 thì xuất ra kết quả luôn hay còn là điều kiện để vòng lặp của đệ quy dừng. Biến n chạy từ n xuống tới 1 thì sẽ dừng lại và trả về kết quả tổng. Trong quá trình chạy xuống 1 đó nó đươc cộng dồn những số mà nó đã chạy qua. </br>
  Ta tưởng tương nếu n=10. thì đệ quy sẽ chạy như sau. 10 + (10-1=9) + (9-1=8) + ...... + (2-1=1) + 1; 
+
 * Đệ quy nhị phân.
      * Là hầm gọi về chính nó 2 lần.
      * Vd: Bài toán thể hiện rõ nhất về dạng đẹ quy này là bài toán về dãy fibonacci. Dãy fibonacci là dãy bắt đầu từ 2 số 0 và 1 hoăc 1 và 1 mà số tiếp theo bằng tỏng 2 số kế trước nó.
@@ -547,7 +548,9 @@ function fibonacci($n)
      return fibonacci($n-2) + fibonacci($n-1);
 }
 ``` 
+
 <img src="http://imageshack.com/a/img922/4991/zSJSjq.png">
+
 * Đệ quy phi tuyến.
      * Là đệ quy mà tỏng hàm có vòng lặp gọi lại chính nó.
      * Vd:
@@ -567,7 +570,9 @@ function day($n)
     }
 }
 ```
+
 <img src="http://imageshack.com/a/img923/7245/3UpCzO.png">
+
 * Đệ quy hỗ tương.
      * Là đệ quy mà có 2 hàm gọi tới nhau. Ví dụ như hàm A gọi tới hàm B và hàm B lại gọi tới hàm A.
      * Vd:
