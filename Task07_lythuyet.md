@@ -644,11 +644,61 @@ function day($n)
 <img src="http://imageshack.com/a/img922/3862/TmJp3Z.png">
 <img src="http://imageshack.com/a/img924/198/uInwd4.png">
 
-
-
-
-
-
+**Đóng file**
+ * Ta dùng hàm `fclose($fp)` trong đó `$fp` sẽ là đối tượng mà ta nhận đk khi mở lại file.
+ * Vd:
+```
+<?php
+$fp = @fopen('dat.txt', "w");
+  
+// Kiểm tra file mở thành công không
+if (!$fp) {
+    echo 'Mở file không thành công';
+}
+else
+{
+    $ghi = 'abc';
+    // Ghi file
+    fwrite($fp, $ghi);
+  
+    // Đóng file
+    fclose($fp);
+}
+?>
+```
+**Các hàm sử lý file khác.**
+ * Kiểm tra xem file có tồn tại không.
+     * Dùng hàm `file_exists($path)`, với $path là đường dẫn. 
+```
+if (file_exists('demo.txt'))
+{
+    echo 'File tồn tại';
+}
+```
+ * Đổi tên file 
+     * Dùng hàm `rename($oldname, $newname), với `$oldname` là đường dẫn tên file cần đổi, `$newname` là đường dẫn file kèm theo tên mới.
+     * Chú ý là khi đổi tên file mà tên file đó có trong thư mục rồi thì dữ liệu sẽ bị ghi đè lên.
+```
+ rename('dat.txt', 'dat2.txt');
+ ```
+ * Copy file
+     * Ta dùng hàm `copy($source, $dest)` trong đó `$source` là đường dẫn file cần copy và `$dest` là đường dẫn file cần chuyển tới.
+```
+ if (!copy('demo2.txt', 'demo3.txt'))
+{
+    echo 'Copy thất bại';
+}
+```
+ * Xóa file
+     * Ta dùng hàm `unlink($path)` trong đó `$path` là đường đẫn file cần xóa.
+```
+if (file_exists('demo.txt'))
+{
+    unlink('demo.txt');
+}
+```
+ * Tạo folder mới.
+     * Ta dùng hàm `mkdir($path)` trong đó `$path` là đường dẫn chứ folder tạo ra.
 
 <a name="32"></a>
 ## 32. Các hàm xử lý file trong php
