@@ -522,8 +522,8 @@ echo strpos('freetuts.net chào các bạn', 'chào');
 <a name="30"></a>
 ## 30. Giải thuật đệ quy trong php
 **Đệ quy tuyến tính.**
-     * Là dạng chỉ gọi duy nhất một lần đến chính nó trong hàm.
-     * VD: Tính tổng các số nguyên từ 1 đến 10.
+ * Là dạng chỉ gọi duy nhất một lần đến chính nó trong hàm.
+ * VD: Tính tổng các số nguyên từ 1 đến 10.
 ```
 function tong($n)
 {
@@ -538,8 +538,8 @@ function tong($n)
  Ta tưởng tương nếu n=10. thì đệ quy sẽ chạy như sau. 10 + (10-1=9) + (9-1=8) + ...... + (2-1=1) + 1; 
 
 **Đệ quy nhị phân.**
-     * Là hầm gọi về chính nó 2 lần.
-     * Vd: Bài toán thể hiện rõ nhất về dạng đẹ quy này là bài toán về dãy fibonacci. Dãy fibonacci là dãy bắt đầu từ 2 số 0 và 1 hoăc 1 và 1 mà số tiếp theo bằng tỏng 2 số kế trước nó.
+ * Là hầm gọi về chính nó 2 lần.   
+ * Vd: Bài toán thể hiện rõ nhất về dạng đẹ quy này là bài toán về dãy fibonacci. Dãy fibonacci là dãy bắt đầu từ 2 số 0 và 1 hoăc 1 và 1 mà số tiếp theo bằng tỏng 2 số kế trước nó.
 ```
 function fibonacci($n)
 {
@@ -552,8 +552,8 @@ function fibonacci($n)
 <img src="http://imageshack.com/a/img922/4991/zSJSjq.png">
 
 **Đệ quy phi tuyến.**
-     * Là đệ quy mà tỏng hàm có vòng lặp gọi lại chính nó.
-     * Vd:
+ * Là đệ quy mà tỏng hàm có vòng lặp gọi lại chính nó.
+ * Vd:
 ```
 function day($n)
 {
@@ -574,8 +574,8 @@ function day($n)
 <img src="http://imageshack.com/a/img923/7245/3UpCzO.png">
 
 **Đệ quy hỗ tương.**
-     * Là đệ quy mà có 2 hàm gọi tới nhau. Ví dụ như hàm A gọi tới hàm B và hàm B lại gọi tới hàm A.
-     * Vd:
+ * Là đệ quy mà có 2 hàm gọi tới nhau. Ví dụ như hàm A gọi tới hàm B và hàm B lại gọi tới hàm A.
+ * Vd:
 <img src="http://imageshack.com/a/img923/4646/MMz5HK.png">
 
 <a name="31"></a>
