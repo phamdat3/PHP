@@ -521,7 +521,7 @@ echo strpos('freetuts.net chào các bạn', 'chào');
 
 <a name="30"></a>
 ## 30. Giải thuật đệ quy trong php
-* Đệ quy tuyến tính.
+**Đệ quy tuyến tính.**
      * Là dạng chỉ gọi duy nhất một lần đến chính nó trong hàm.
      * VD: Tính tổng các số nguyên từ 1 đến 10.
 ```
@@ -537,7 +537,7 @@ function tong($n)
  Với cách giải này khi n=1 thì xuất ra kết quả luôn hay còn là điều kiện để vòng lặp của đệ quy dừng. Biến n chạy từ n xuống tới 1 thì sẽ dừng lại và trả về kết quả tổng. Trong quá trình chạy xuống 1 đó nó đươc cộng dồn những số mà nó đã chạy qua. </br>
  Ta tưởng tương nếu n=10. thì đệ quy sẽ chạy như sau. 10 + (10-1=9) + (9-1=8) + ...... + (2-1=1) + 1; 
 
-* Đệ quy nhị phân.
+**Đệ quy nhị phân.**
      * Là hầm gọi về chính nó 2 lần.
      * Vd: Bài toán thể hiện rõ nhất về dạng đẹ quy này là bài toán về dãy fibonacci. Dãy fibonacci là dãy bắt đầu từ 2 số 0 và 1 hoăc 1 và 1 mà số tiếp theo bằng tỏng 2 số kế trước nó.
 ```
@@ -551,7 +551,7 @@ function fibonacci($n)
 
 <img src="http://imageshack.com/a/img922/4991/zSJSjq.png">
 
-* Đệ quy phi tuyến.
+**Đệ quy phi tuyến.**
      * Là đệ quy mà tỏng hàm có vòng lặp gọi lại chính nó.
      * Vd:
 ```
@@ -573,7 +573,7 @@ function day($n)
 
 <img src="http://imageshack.com/a/img923/7245/3UpCzO.png">
 
-* Đệ quy hỗ tương.
+**Đệ quy hỗ tương.**
      * Là đệ quy mà có 2 hàm gọi tới nhau. Ví dụ như hàm A gọi tới hàm B và hàm B lại gọi tới hàm A.
      * Vd:
 <img src="http://imageshack.com/a/img923/4646/MMz5HK.png">
@@ -581,10 +581,11 @@ function day($n)
 <a name="31"></a>
 ## 31. Các hàm xử lý mảng trong php
 **Mở file**
- * Cú pháp mở file `open($path,$option)
-     * $path là đường dẫn đến file cần mở.
-     * $option là quyền cho phép thao tác trên file
+ * Cú pháp mở file `open($path,$option)`
+     * `$path` là đường dẫn đến file cần mở.
+     * `$option` là quyền cho phép thao tác trên file
  * Danh sách các quyền.
+
 | Moden | Diễn giả |
 |-------|----------|
 | r | Read only(chỉ đọc) |
@@ -608,12 +609,13 @@ function day($n)
 ```
 <img src = "http://imageshack.com/a/img923/1415/M7Um6p.png">
 <img src =" http://imageshack.com/a/img924/3954/y4x2si.png">
+
 **Đọc file**
  * Có 3 cách đọc file:
      * Đọc từng ký tự ta dùng hàn `fgetc($fp)` 
      * Đọc theo từng dòng ta dùng hàm `fgets($fp)` </br>
      **Đối với hai cách đọc này thì ta dùng hàm `feof($fp)` được đặt trong vòng lặp While để sau khi đọc song dòng hay song ký tự thì chuyển sang dòng hay ký tự mới.
-     * Đọc hết file ta dùng hàm `fread($fp, $size). Trong đó $fp là đối tượng mở file, $size kích cỡ file cần đọc. Dùng hàm filesize($path) để tính size của file.
+     * Đọc hết file ta dùng hàm `fread($fp, $size)`. Trong đó $fp là đối tượng mở file, $size kích cỡ file cần đọc. Dùng hàm filesize($path) để tính size của file.
  * **Ví dụ**
  * Đọc từng ký tự
 <img src="http://imageshack.com/a/img924/5418/sqbcfN.png">
@@ -621,11 +623,15 @@ function day($n)
 <img src="http://imageshack.com/a/img922/4829/IeMVKM.png">
  * Đọc cả file
 <img src="http://imageshack.com/a/img923/1153/aXxVZ5.png">
+
 **Ghi file** 
  * Để ghi file ta dùng hàm fwrite($fp, $content) trong đó $fp là đối tượng file càn ghi, $content là nội dung cần ghi(được nằm trong file đó).
  *Ví dụ
+     * Ta dùng thuộc tính **w**
 <img src="http://imageshack.com/a/img923/425/G728C5.png">
+     * Ta dùng thuộc tính **a** và file `dat.txt` đã có sẵn.
 <img src="http://imageshack.com/a/img923/4012/IrqluO.png">
+     * Ta dùng thuộc tính **a** và file `abc.txt` chưa có trong thư mục. Ta chứ ý tới số lần nhấp vào tải lại trang. Nhấp bao nhiêu lần thì file của chúng ta sẽ được tạo thêm dữ liệu chuyền vào bấy nhiêu lần.
 <img src="http://imageshack.com/a/img922/4929/SoqYXR.png">
 <img src="http://imageshack.com/a/img922/3862/TmJp3Z.png">
 <img src="http://imageshack.com/a/img924/198/uInwd4.png">
